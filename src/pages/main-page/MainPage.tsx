@@ -3,6 +3,7 @@ import { Button } from "@material-ui/core";
 import { StyledMainPage } from "./styled";
 import ControlsContainer from "../../components/controls-container/ControlsContainer";
 import { DragEventDto } from "../../dto/dto";
+import DnDTypography from "../../components/dnd-typograhy/DnDTypography";
 
 const getComponent = (
   componentName: string
@@ -10,9 +11,7 @@ const getComponent = (
   switch (componentName) {
     case "Heading":
       return (
-        <h2 key={Date.now()} style={{ position: "absolute", top: 0, left: 0 }}>
-          Heading
-        </h2>
+        <DnDTypography key={Date.now()} />
       );
   }
 };
